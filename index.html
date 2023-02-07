@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
+    <title>BookList</title>
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <h1 class="display-4 text-center fw-bold font-monospace title">
+            <i class="fa-solid fa-book text-primary"></i>
+            Mening <span class="text-primary text-bold">Kitoblarim</span>
+        </h1>
+        <form id="book-form">
+            <div class="form-group mt-2">
+                <label for="title">Nomi:</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group mt-2">
+                <label for="author">Muallif:</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="d-grid gap-2 mt-5">
+                <input type="submit" value="Kitobni Qo'shish" class="btn btn-primary btn-lg">
+            </div>
+        </form>
+        <table class="table table-striped mt-5 mx-auto border border text-center">
+            <thead>
+                <tr>
+                    <th>Kitob:</th>
+                    <th>Muallif:</th>
+                    <th>O'chirish</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
